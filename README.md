@@ -154,3 +154,16 @@ for testImage in collectionOfImages:
 
 ### Requirements:
 - Place the files (e.g., `plane.jpg`, `FerrariF1.jpg`) in the `example_images/` directory.
+
+
+
+
+### Google Colab Testing
+
+You can directly test this project using Google Colab. The Colab environment has all dependencies pre-installed and ready to run.
+
+- Open the project in Google Colab by clicking the link below:
+
+[**Run in Google Colab**](<[your-google-colab-link](https://colab.research.google.com/drive/1pCa8NhD1yUeQlV80WI97ZDPoAD7bYsK_?usp=sharing)>)
+
+
