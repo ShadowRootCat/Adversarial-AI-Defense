@@ -108,3 +108,49 @@ example_images/
 ├── FerrariF1.jpg   # Downloaded from: https://storage.googleapis.com/kagglesdsdata/datasets/4358290/7486255/vehicle_data/car/Ferrari.jpg
 You can either manually download these files or let the script automatically download them when it runs.
 ```
+
+Here’s the modified code snippet to load images from the `example_images/` directory:
+
+```python
+# Define the directory containing example images
+EXAMPLE_IMAGES_DIR = "example_images"
+
+# Replace URL-based collectionOfImages with local file names
+collectionOfImages = [
+    "plane.jpg",
+    "FerrariF1.jpg"
+]
+
+# Updated image loading logic
+for testImage in collectionOfImages:
+    image_path = os.path.join(EXAMPLE_IMAGES_DIR, testImage)
+    decodedImage = tf.image.decode_image(tf.io.read_file(image_path))
+    preprocessImage = imagePreprocessor(decodedImage)
+    imageProbability = mobileNetV2Model.predict(preprocessImage)
+
+    label = tf.keras.applications.mobilenet_v2.decode_predictions(imageProbability, top=1)[0][0]
+    print(f"Original Prediction: {label[1]} with confidence {label[2]:.2f}")
+
+    epsilons = [0.01, 0.1, 0.2]
+    perturbations = adversarialPattern(preprocessImage, tf.one_hot(208, imageProbability.shape[-1]))
+
+    correctedImages = [preprocessImage]
+    descriptions = ["Original"]
+    for eps in epsilons:
+        adv_x = preprocessImage + eps * perturbations
+        adv_x = tf.clip_by_value(adv_x, -1, 1)
+        correctedImages.append(adv_x)
+        descriptions.append(f"Epsilon = {eps}")
+
+    imageOutput(correctedImages, descriptions)
+```
+
+### Key Changes:
+1. **Image Path Construction**:
+   - Used `os.path.join(EXAMPLE_IMAGES_DIR, testImage)` to construct paths relative to the `example_images/` directory.
+
+2. **Replaced URLs**:
+   - Removed the URLs and used filenames directly.
+
+### Requirements:
+- Place the files (e.g., `plane.jpg`, `FerrariF1.jpg`) in the `example_images/` directory.
