@@ -98,3 +98,13 @@ This project serves as a practical exploration of adversarial machine learning c
 ## Python Script: `perturbation_script.py`
 
 ---
+
+Example for example_images/
+Create a folder named example_images/ in your project directory and populate it with test images. You can use the following files and URLs for testing:
+
+```
+example_images/
+├── plane.jpg       # Downloaded from: https://storage.googleapis.com/kagglesdsdata/datasets/4358290/7486255/vehicle_data/airplane/0011.jpg
+├── FerrariF1.jpg   # Downloaded from: https://storage.googleapis.com/kagglesdsdata/datasets/4358290/7486255/vehicle_data/car/Ferrari.jpg
+You can either manually download these files or let the script automatically download them when it runs.
+```
