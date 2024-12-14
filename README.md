@@ -95,18 +95,6 @@ This project serves as a practical exploration of adversarial machine learning c
 
 ---
 
-
-
-## Requirements
-
-```plaintext
-tensorflow
-matplotlib
-numpy
-```
-
----
-
 ## Python Script: `perturbation_script.py`
 
 ---
