@@ -184,4 +184,4 @@ You can directly test this project using Google Colab. The Colab environment has
 
 
 
-This project was developed as part of the <ins>**Cybersecurity and Defense**</ins> course to explore vulnerabilities in AI systems and adversarial machine learning techniques. The goal is to study how adversarial perturbations can impact model predictions and highlight potential security risks in AI.
+NOTE: This project was developed as part of the <ins>**Cybersecurity and Defense**</ins> course to explore vulnerabilities in AI systems and adversarial machine learning techniques. The goal is to study how adversarial perturbations can impact model predictions and highlight potential security risks in AI.
