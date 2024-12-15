@@ -182,3 +182,6 @@ You can directly test this project using Google Colab. The Colab environment has
 - **Customizations**:
   - If you wish to adapt the project for other datasets, models, or use cases, please proceed with caution and ensure proper understanding of adversarial machine learning concepts.
 
+
+
+This project was developed as part of the <ins>**Cybersecurity and Defense**</ins> course to explore vulnerabilities in AI systems and adversarial machine learning techniques. The goal is to study how adversarial perturbations can impact model predictions and highlight potential security risks in AI.
