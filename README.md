@@ -164,6 +164,6 @@ You can directly test this project using Google Colab. The Colab environment has
 
 - Open the project in Google Colab by clicking the link below:
 
-[**Run in Google Colab**](<[your-google-colab-link](https://colab.research.google.com/drive/1pCa8NhD1yUeQlV80WI97ZDPoAD7bYsK_?usp=sharing)>)
+[**Run in Google Colab**](<https://colab.research.google.com/drive/1pCa8NhD1yUeQlV80WI97ZDPoAD7bYsK_?usp=sharing>)
 
 
