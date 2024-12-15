@@ -50,7 +50,7 @@ This project serves as a practical exploration of adversarial machine learning c
 2. Install the required Python libraries:
 
    ```bash
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
    ```
 
 3. Download the pre-trained MobileNetV2 weights (handled automatically by TensorFlow).
@@ -62,7 +62,7 @@ This project serves as a practical exploration of adversarial machine learning c
 1. **Run the Script**:
 
    ```bash
-   python perturbation_script.py
+   python3 perturbation_script.py
    ```
 
 2. **Test Images**:
