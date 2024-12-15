@@ -164,6 +164,21 @@ You can directly test this project using Google Colab. The Colab environment has
 
 - Open the project in Google Colab by clicking the link below:
 
-[**Run in Google Colab**](<https://colab.research.google.com/drive/1pCa8NhD1yUeQlV80WI97ZDPoAD7bYsK_?usp=sharing>)
+[**Run in Google Colab**](<https://colab.research.google.com/drive/1pCa8NhD1yUeQlV80cvdscWI97ZDPoAD7bYsK_?usp=sharing>)
 
+
+### Advisory: Do Not Modify the Code
+
+**Important**: The provided code and configurations have been carefully designed and tested to demonstrate adversarial perturbation techniques effectively. 
+
+- **Do Not Modify**:
+  - Avoid altering the core logic of the script (`perturbation_script.py`).
+  - Changes to the pre-trained model settings, loss functions, or gradient calculations may lead to unexpected results.
+
+- **Usage Guidelines**:
+  - Use the code as-is for educational and testing purposes.
+  - Ensure all dependencies are installed and follow the setup instructions.
+
+- **Customizations**:
+  - If you wish to adapt the project for other datasets, models, or use cases, please proceed with caution and ensure proper understanding of adversarial machine learning concepts.
 
