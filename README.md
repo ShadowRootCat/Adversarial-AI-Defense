@@ -172,7 +172,7 @@ You can directly test this project using Google Colab. The Colab environment has
 **Important**: The provided code and configurations have been carefully designed and tested to demonstrate adversarial perturbation techniques effectively. 
 
 - **Do Not Modify**:
-  - Avoid altering the core logic of the script (`perturbation_script.py`).
+  - Avoid altering the core logic of the script.
   - Changes to the pre-trained model settings, loss functions, or gradient calculations may lead to unexpected results.
 
 - **Usage Guidelines**:
